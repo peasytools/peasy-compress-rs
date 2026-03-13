@@ -1,0 +1,19 @@
+[package]
+name = "peasy-compress"
+version = "0.1.1"
+edition = "2021"
+authors = ["PeasyTools"]
+description = "Compression library for Rust — gzip, deflate, and zlib compression with ratio calculation. Built on flate2 for fast, safe compression."
+license = "MIT"
+repository = "https://github.com/peasytools/peasy-compress-rs"
+homepage = "https://peasytools.com"
+documentation = "https://docs.rs/peasy-compress"
+readme = "README.md"
+keywords = ["compression", "gzip", "deflate", "zlib", "compress"]
+categories = ["compression", "command-line-utilities"]
+
+exclude = ["target/", "demo.gif", "demo.tape"]
+
+[dependencies]
+flate2 = "1"
+thiserror = "2"
