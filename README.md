@@ -3,6 +3,8 @@
 [![crates.io](https://img.shields.io/crates/v/peasy-compress)](https://crates.io/crates/peasy-compress)
 [![docs.rs](https://docs.rs/peasy-compress/badge.svg)](https://docs.rs/peasy-compress)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![crates.io](https://agentgif.com/badge/crates/peasy-compress/version.svg)](https://crates.io/crates/peasy-compress)
+[![GitHub stars](https://agentgif.com/badge/github/peasytools/peasy-compress-rs/stars.svg)](https://github.com/peasytools/peasy-compress-rs)
 
 Async Rust client for the [Peasy Compress](https://peasytools.com) API -- compress, archive, and extract files with ZIP, TAR, gzip, Brotli, and Zstandard. Built with reqwest, serde, and tokio.
 
