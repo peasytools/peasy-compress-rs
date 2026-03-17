@@ -1,19 +1,24 @@
 [package]
 name = "peasy-compress"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 authors = ["PeasyTools"]
-description = "Compression library for Rust — gzip, deflate, and zlib compression with ratio calculation. Built on flate2 for fast, safe compression."
+description = "Rust client for PeasyCompress — file compression tools, glossary, and guides API"
 license = "MIT"
 repository = "https://github.com/peasytools/peasy-compress-rs"
 homepage = "https://peasytools.com"
 documentation = "https://docs.rs/peasy-compress"
 readme = "README.md"
-keywords = ["compression", "gzip", "deflate", "zlib", "compress"]
-categories = ["compression", "command-line-utilities"]
-
+keywords = ["compress", "peasy", "api-client", "tools"]
+categories = ["api-bindings"]
 exclude = ["target/", "demo.gif", "demo.tape"]
 
 [dependencies]
-flate2 = "1"
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
 thiserror = "2"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
+wiremock = "0.6"
